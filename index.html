@@ -2,37 +2,36 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>بورتفوليو Maisam Bsirini</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- شريط التنقل -->
-  <nav>
-    <ul>
+  <nav class="navbar">
+    <div class="logo">Maisam Bsirini</div>
+    <ul class="nav-links">
       <li><a href="#about">عنّي</a></li>
       <li><a href="#skills">مهاراتي</a></li>
-      <li><a href="#specialization">عن الاختصاص</a></li>
+      <li><a href="#specialization">الاختصاص</a></li>
       <li><a href="#projects">مشاريعي</a></li>
-      <li><a href="#contact">تواصل معي</a></li>
+      <li><a href="#contact">تواصل</a></li>
     </ul>
   </nav>
 
-  <!-- الهيدر مع صورة -->
-  <header>
-    <div class="header-container">
-      <div class="profile-pic">
-        <img src="IMG_٢٠٢٣١٢٠٨_١٢٣٤٣١.jpg" alt="صورة شخصية لـ Maisam Bsirini">
-      </div>
-      <div class="header-text">
-        <h1>Maisam Bsirini</h1>
-        <p>طالبة هندسة معلوماتية - اختصاص هندسة برمجيات</p>
-        <p>مطورة Flutter و Laravel</p>
-      </div>
+  <!-- الهيدر -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="IMG_٢٠٢٣١٢٠٨_١٢٣٤٣١.jpg" alt="صورة شخصية لـ Maisam Bsirini" class="profile-img">
+      <h1>Maisam Bsirini</h1>
+      <p>طالبة هندسة معلوماتية - اختصاص هندسة برمجيات</p>
+      <p>مطورة Flutter و Laravel</p>
     </div>
   </header>
 
-  <!-- عني -->
-  <section id="about" class="card">
+  <!-- الأقسام -->
+  <section id="about" class="section">
     <h2>عنّي</h2>
     <p>
       أنا طالبة في كلية الهندسة المعلوماتية بجامعة دمشق، أركز على اختصاص هندسة البرمجيات الذي يجمع بين
@@ -41,36 +40,32 @@
     </p>
   </section>
 
-  <!-- المهارات -->
-  <section id="skills" class="card">
+  <section id="skills" class="section alt">
     <h2>مهاراتي</h2>
     <ul>
       <li>مستوى اللغة الإنكليزية: B1</li>
-      <li> التصميم والإبداع</li>
-      <li>سرعة الاندماج والتعاون مع الفريق</li>
-      <li>إدارة المشاريع البرمجية باستخدام Git و GitHub</li>
-      <li>تطوير تطبيقات باستخدام Flutter و Laravel</li>
+      <li>التصميم والإبداع</li>
+      <li>التعاون والعمل الجماعي</li>
+      <li>إدارة المشاريع باستخدام Git و GitHub</li>
+      <li>تطوير تطبيقات Flutter و Laravel</li>
       <li>التفكير المنهجي وحل المشكلات التقنية</li>
     </ul>
   </section>
 
-  <!-- عن الاختصاص -->
-  <section id="specialization" class="card">
-    <h2>عن اختصاص هندسة البرمجيات</h2>
+  <section id="specialization" class="section">
+    <h2>عن الاختصاص</h2>
     <p>
-      هندسة البرمجيات هي المجال الذي يهتم بتصميم، تطوير، اختبار، وصيانة الأنظمة البرمجية بشكل احترافي.
-      يركز القسم على:
+      هندسة البرمجيات تهتم بتصميم وتطوير الأنظمة البرمجية باحترافية، وتركز على:
     </p>
     <ul>
-      <li>تحليل المتطلبات وفهم احتياجات المستخدمين.</li>
-      <li>تصميم معماريات برمجية قابلة للتوسع والصيانة.</li>
-      <li>تطبيق منهجيات تطوير حديثة مثل Agile و DevOps.</li>
-      <li>ضمان جودة البرمجيات عبر الاختبار والتوثيق.</li>
+      <li>تحليل المتطلبات وفهم احتياجات المستخدمين</li>
+      <li>تصميم معماريات قابلة للتوسع والصيانة</li>
+      <li>تطبيق منهجيات Agile و DevOps</li>
+      <li>ضمان الجودة عبر الاختبار والتوثيق</li>
     </ul>
   </section>
 
-  <!-- المشاريع -->
-  <section id="projects" class="card">
+  <section id="projects" class="section alt">
     <h2>مشاريعي</h2>
     <ul>
       <li><a href="https://github.com/MaisamBsirini/kinana_al_sham">تطبيق لإدارة جمعية كنانة الشام</a></li>
@@ -81,17 +76,15 @@
     </ul>
   </section>
 
-  <!-- التواصل -->
-  <section id="contact" class="card">
+  <section id="contact" class="section">
     <h2>تواصل معي</h2>
-    <p>📧 البريد الإلكتروني: <a href="mailto:maisamgehadbsirini@gmail.com">maisamgehadbsirini@gmail.com</a></p>
-    <p>📱 الهاتف: 0935644187</p>
-    <p>🌐 GitHub: <a href="https://github.com/MaisamBsirini">github.com/MaisamBsirini</a></p>
+    <p>📧 <a href="mailto:maisamgehadbsirini@gmail.com">maisamgehadbsirini@gmail.com</a></p>
+    <p>📱 0935644187</p>
+    <p>🌐 <a href="https://github.com/MaisamBsirini" target="_blank">github.com/MaisamBsirini</a></p>
   </section>
 
-  <!-- الفوتر -->
   <footer>
-    <p>© 2025 - بورتفوليو Maisam Bsirini</p>
+    <p>© 2025 - Maisam Bsirini | جميع الحقوق محفوظة</p>
   </footer>
 </body>
 </html>
