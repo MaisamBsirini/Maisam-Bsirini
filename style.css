@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #2E86AB;   /* أزرق هادئ */
+  --secondary-color: #F6F9FC; /* خلفية فاتحة */
+  --accent-color: #4CAF50;    /* أخضر للشغف */
+  --text-color: #333;
+}
+
+body {
+  font-family: 'Cairo', 'Roboto', sans-serif;
+  background: var(--secondary-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  direction: rtl;
+}
+
+/* شريط التنقل */
+nav {
+  background: var(--primary-color);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
+/* الهيدر */
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 0.3rem 0;
+}
+
+/* البطاقات */
+.card {
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* القوائم */
+ul {
+  padding: 0;
+}
+
+ul li {
+  margin: 0.7rem 0;
+}
+
+ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul li a:hover {
+  color: var(--accent-color);
+}
+
+/* الفوتر */
+footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
