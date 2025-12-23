@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 :root {
-  --primary-color: #2E86AB;   /* أزرق هادئ */
-  --secondary-color: #F6F9FC; /* خلفية فاتحة */
-  --accent-color: #4CAF50;    /* أخضر للشغف */
+  --primary-color: #1E3A8A;   /* أزرق داكن أنيق */
+  --secondary-color: #F3F4F6; /* خلفية رمادية فاتحة */
+  --accent-color: #10B981;    /* أخضر هادئ للشغف */
   --text-color: #333;
 }
 
@@ -42,20 +42,34 @@ nav ul li a:hover {
   color: var(--accent-color);
 }
 
-/* الهيدر */
+/* الهيدر مع صورة */
 header {
-  text-align: center;
-  padding: 3rem 1rem;
   background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
   color: white;
+  padding: 3rem 1rem;
 }
 
-header h1 {
-  font-size: 3rem;
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+.header-text h1 {
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
-header p {
+.header-text p {
   font-size: 1.2rem;
   margin: 0.3rem 0;
 }
@@ -98,7 +112,7 @@ ul li a:hover {
 
 /* الفوتر */
 footer {
-  background: #222;
+  background: #111;
   color: #aaa;
   text-align: center;
   padding: 1.5rem;
